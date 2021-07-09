@@ -25,9 +25,6 @@ def extract_data(tariff_code_list, month_list, year_list, max_month_year, driver
     type_box = Select(driver.find_element_by_name('imex_type'))
     type_box.select_by_value('import')
 
-    # year = 0
-    # month = 0
-
     data = {}
     for tariff_code in tariff_code_list:
         data[tariff_code] = {}
